@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.koueitech.co.jp/sitemap.xml
+Sitemap: https://web.koueitech.co.jp/sitemap.xml
