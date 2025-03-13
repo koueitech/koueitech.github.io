@@ -57,29 +57,8 @@ nav {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
 .logo h1 {
   font-size: 1.5rem;
-}
-
-.company-logo {
-  height: 40px;
-  width: auto;
-  transition: transform var(--transition-speed);
-}
-
-.company-logo:hover {
-  transform: scale(1.05);
-}
-
-.company-logo-footer {
-  height: 50px;
-  width: auto;
-  margin-bottom: 15px;
 }
 
 .nav-links {
