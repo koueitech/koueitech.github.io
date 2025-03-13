@@ -79,7 +79,7 @@ bgElements.forEach(el => {
   el.style.height = '100%';
   el.style.backgroundSize = 'cover';
   el.style.backgroundPosition = 'center';
-  el.style.transition = 'opacity 1s ease';
+  el.style.transition = 'opacity 5s ease';
 });
 
 // Ensure any content inside the hero has proper positioning
@@ -125,11 +125,11 @@ function crossFade() {
 // For debugging
 console.log('Initial setup: Active element index:', activeElementIndex, 'Current image index:', currentImageIndex);
 
-// Change background image every 5 seconds
+// Change background image every 8 seconds
 setInterval(() => {
   crossFade();
   console.log('After transition: Active element index:', activeElementIndex, 'Current image index:', currentImageIndex);
-}, 5000);
+}, 8000);
 
 // FAQ toggle
 const faqItems = document.querySelectorAll('.faq-item');
