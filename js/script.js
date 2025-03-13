@@ -92,9 +92,13 @@ heroContent.forEach(element => {
   element.style.zIndex = '1';
   
   // Optional: make text color white for better contrast with overlay
-  const textElements = element.querySelectorAll('h1, h2, h3, h4, h5, h6, p, span, a, button');
+  // gradient-textクラスを持つ要素は除外して白色にする
+  const textElements = element.querySelectorAll('h1, h2, h3, h4, h5, h6, p, a, button');
   textElements.forEach(textEl => {
-    if (!textEl.style.color) {
+    // gradient-textクラスを持つ要素や、その中にgradient-textクラスの要素がある場合は処理しない
+    if (!textEl.classList.contains('gradient-text') && 
+        !textEl.querySelector('.gradient-text') && 
+        !textEl.style.color) {
       textEl.style.color = 'white';
     }
   });
